@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url(header.css);
+
+:root {
+    --dark-green: #626F47;
+    --light-green: #bac695;
+    --white: #dedcd8;
+    --black: #292929;
+    --title-font: Krona One;
+    --paragraph-font: Nunito Sans;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    margin: auto;
+}
+
+strong {
+    color: var(--dark-green);
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 36px;
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--title-font);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: 24px;
+}

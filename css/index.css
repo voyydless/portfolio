@@ -1,0 +1,55 @@
+@import url(global.css);
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 20px;
+    margin: 0 8%;
+}
+
+.intro_text {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.intro_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.intro_links h2 {
+    font-family: Krona One;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.intro_links a {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 3px solid var(--dark-green);
+    width: 280px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: Nunito Sans;
+    font-weight: 700;
+    color: var(--dark-green);
+    transition: 0.3s;
+}
+
+.intro_links a:hover {
+    background-color: var(--light-green);
+}
+
+.intro_image {
+    width: 475px;
+}

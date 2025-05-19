@@ -1,0 +1,27 @@
+@import url(global.css);
+
+header {
+    background-color: var(--dark-green);
+    padding: 36px;
+    margin-top: 24px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header nav a {
+    color:#dedcd8;
+    font-family: var(--title-font);
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+header nav a:hover,
+.selected {
+    color: var(--light-green);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}

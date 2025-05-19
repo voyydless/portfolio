@@ -1,0 +1,41 @@
+@import url(global.css);
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 20px;
+    margin: 0 8%;
+}
+
+.about_text {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about_image {
+    width: 475px;
+}
+
+.about_education {
+    gap: 32px;
+}
+
+.about_education ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.about_education p {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.about_education .date {
+    color: #626F47;
+    margin-top: 0;
+}
