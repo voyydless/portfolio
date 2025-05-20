@@ -13,7 +13,7 @@ header nav {
 }
 
 header nav a {
-    color:#dedcd8;
+    color: var(--white);
     font-family: var(--title-font);
     text-decoration: none;
     transition: 0.3s all;
@@ -24,4 +24,13 @@ header nav a:hover,
     color: var(--light-green);
     text-decoration: underline;
     text-underline-offset: 8px;
+}
+
+.dark-mode nav a{
+    color: var(--darker-green);
+}
+
+.dark-mode nav a:hover,
+.dark-mode .selected {
+    color: #0e0e0e;
 }

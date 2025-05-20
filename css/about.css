@@ -36,6 +36,10 @@
 }
 
 .about_education .date {
-    color: #626F47;
+    color: var(--dark-green);
     margin-top: 0;
+}
+
+.dark-mode .date{
+    color: var(--light-green)
 }

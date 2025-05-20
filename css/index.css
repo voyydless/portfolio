@@ -53,3 +53,12 @@
 .intro_image {
     width: 475px;
 }
+
+.dark-mode .intro_links a {
+    border: 3px solid var(--light-green);
+    color: var(--light-green);
+}
+
+.dark-mode .intro_links a:hover {
+    background-color: #2b3020;
+}

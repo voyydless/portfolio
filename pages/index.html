@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/theme.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="selected">Home</a>
-            <a href="">Projetos</a>
-            <a href="about.html">Sobre Mim</a>
+            <a href="" id="projects">Projetos</a>
+            <a href="about.html" id="aboutme">Sobre Mim</a>
         </nav> 
     </header>
 
     <main>
         <section class="intro">
+
         <div class="intro_text">
-            <h1>Eleve seu negócio digital a outro nível <strong>com um Front-end de qualidade!</strong></h1>
-            <p>
-                Olá! Sou Void, desenvolvedor Front-end com especialidade em React, HTML e CSS. 
-                Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
-            </p>
+            <h1 id="catchline"></h1>
+            <p id="welcome"></p>
+
             <div class="intro_links">
-                <h2>Acesse minhas redes:</h2>
+                <h2 id="socials"></h2>
                 <a href="https://github.com/voyydless" target="_blank">
                     <img src="../assets/github.png">
                     Github
@@ -39,12 +39,17 @@
                 </a>
             </div>
         </div>
+
         <div class="intro_image">
             <img src="../assets/imagem_rato.png" alt="Eu, o rato">
         </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <button id="theme-switch" onclick="toggleTheme()">Button</button>
+        <a href="#eng" data-reload>ENG</a>
+        <a href="#ptbr" data-reload>PT-BR</a>
+    </footer>
 </body>
 </html>

@@ -4,6 +4,7 @@
 :root {
     --dark-green: #626F47;
     --light-green: #bac695;
+    --darker-green: #2b3020;
     --white: #dedcd8;
     --black: #292929;
     --title-font: Krona One;
@@ -46,4 +47,13 @@ h3 {
 p {
     font-family: var(--paragraph-font);
     font-size: 24px;
+}
+
+.dark-mode {
+    background-color: #0e0e0e;
+    color: var(--white);
+}
+
+.dark-mode strong {
+    color: var(--light-green);
 }
