@@ -1,0 +1,53 @@
+@import url(global.css);
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 0 32px 20px;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.language-toggles a {
+    background-image:linear-gradient(var(--white), 80%, var(--light-green));
+    border: 3px solid var(--dark-green);
+    color: var(--dark-green);
+    border-radius: 5px;
+    font-family: var(--paragraph-font);
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    padding: 8px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+#language-toggle-eng {
+    padding: 8px 15px;
+}
+
+.language-toggles a:hover {
+    background-image:linear-gradient(var(--white), 30%, var(--light-green));
+    text-decoration-color: var(--dark-green);
+}
+
+.dark-mode .language-toggles a {
+    background-image: linear-gradient(var(--pitch-black), 80%, var(--darker-green));
+    border: 3px solid var(--light-green);
+    color: var(--light-green);
+}
+
+.dark-mode .language-toggles a:hover {
+    background-image: linear-gradient(var(--pitch-black), 20%, var(--darker-green));
+    text-decoration-color: var(--light-green);
+}

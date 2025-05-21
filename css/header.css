@@ -1,36 +1,44 @@
 @import url(global.css);
 
-header {
-    background-color: var(--dark-green);
-    padding: 36px;
-    margin-top: 24px;
-}
-
-header nav {
+nav {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    align-items: center;
+    justify-content: left;
+    width: 615px;
+    padding: 4% 20px 0 0;
+    margin: 0 auto;
 }
 
-header nav a {
+nav a {
+    background-image: linear-gradient(var(--white), 20%, var(--dark-green));
+    border: 3px solid var(--dark-green);
+    border-radius: 5px 16px 0 0;
+    box-shadow: 5px 0 3px #b2b0ad;
+    border-bottom-style: none;
+    padding: 16px;
     color: var(--white);
     font-family: var(--title-font);
-    text-decoration: none;
-    transition: 0.3s all;
+    margin-right: 16px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 8px;
+    transition: 0.3s;
 }
 
-header nav a:hover,
-.selected {
-    color: var(--light-green);
+nav a:hover {
+    background-image: linear-gradient(var(--white), 50%, var(--dark-green));
     text-decoration: underline;
     text-underline-offset: 8px;
 }
 
-.dark-mode nav a{
-    color: var(--darker-green);
+.dark-mode nav a {
+    background-image: linear-gradient(var(--pitch-black), 25%, var(--dark-green));
+    border: 3px solid var(--dark-green);
+    box-shadow: none;
+    border-bottom-style: none;
+    color: var(--pitch-black);
 }
 
-.dark-mode nav a:hover,
-.dark-mode .selected {
-    color: #0e0e0e;
+.dark-mode nav a:hover {
+    background-image: linear-gradient(var(--pitch-black), 50%, var(--dark-green));
 }

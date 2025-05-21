@@ -10,9 +10,8 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="selected">Home</a>
-            <a href="" id="projects">Projetos</a>
-            <a href="about.html" id="aboutme">Sobre Mim</a>
+            <a href="" id="projects"></a>
+            <a href="about.html" id="aboutme"></a>
         </nav> 
     </header>
 
@@ -20,6 +19,7 @@
         <section class="intro">
 
         <div class="intro_text">
+
             <h1 id="catchline"></h1>
             <p id="welcome"></p>
 
@@ -37,19 +37,25 @@
                     <img src="../assets/instagram.png">
                     Instagram
                 </a>
+
             </div>
         </div>
 
-        <div class="intro_image">
-            <img src="../assets/imagem_rato.png" alt="Eu, o rato">
-        </div>
         </section>
     </main>
 
     <footer>
-        <button id="theme-switch" onclick="toggleTheme()">Button</button>
-        <a href="#eng" data-reload>ENG</a>
-        <a href="#ptbr" data-reload>PT-BR</a>
+
+        <div class="footer-wrapper">
+            <button id="theme-switch" onclick="toggleTheme()">Button</button>
+            <p>Developed by voyydless</p>
+
+            <div class="language-toggles">
+                <a id="language-toggle-eng" href="#eng" data-reload>ENG</a>
+                <a href="#ptbr" data-reload>PT-BR</a>
+            </div>
+        </div>
+
     </footer>
 </body>
 </html>
