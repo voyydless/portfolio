@@ -51,6 +51,7 @@ hr {
     align-items: center;
     padding: 0 16px;
     gap: 16px;
+    position: relative;
 }
 
 /* === Project Image === */
@@ -91,7 +92,8 @@ hr {
 
 /* === Tech Stack Dropdown === */
 .project_tech_dropdown {
-    position: relative;
+    position: absolute;   /* Change from relative to absolute */
+    bottom: 0;
     display: flex;
     flex-direction: column;
 }
@@ -126,7 +128,7 @@ hr {
     flex-direction: column;
     align-self: center;
     margin-left: 45%;
-    margin-top: -32px;
+    margin-top: -16px;
     gap: 8px;
     width: auto;
     opacity: 0;
