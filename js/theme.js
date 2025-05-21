@@ -1,4 +1,3 @@
-
 // Toggle dark/light mode and store it
 function toggleTheme() {
     let element = document.body;
@@ -22,9 +21,12 @@ document.addEventListener("DOMContentLoaded", loadTheme);
 
 // Toggle dropdown for tech stack
 document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-  btn.addEventListener('click', function() {
-    this.closest('.project').classList.toggle('open');
+    const parent = btn.closest(".project") || btn.closest(".about");
+    if (parent) {
+      btn.addEventListener("click", function() {
+        parent.classList.toggle("open");
   });
+    }
 });
 
 // Language translations

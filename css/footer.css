@@ -1,5 +1,6 @@
 @import url(global.css);
 
+/* === Footer Layout === */
 footer {
     display: flex;
     align-items: center;
@@ -16,9 +17,9 @@ footer {
     margin: 0 auto;
 }
 
-
+/* === Language Toggles === */
 .language-toggles a {
-    background-image:linear-gradient(var(--white), 80%, var(--light-green));
+    background-image: linear-gradient(var(--white), 80%, var(--light-green));
     border: 3px solid var(--dark-green);
     color: var(--dark-green);
     border-radius: 5px;
@@ -37,10 +38,11 @@ footer {
 }
 
 .language-toggles a:hover {
-    background-image:linear-gradient(var(--white), 30%, var(--light-green));
+    background-image: linear-gradient(var(--white), 30%, var(--light-green));
     text-decoration-color: var(--dark-green);
 }
 
+/* === Dark Mode === */
 .dark-mode .language-toggles a {
     background-image: linear-gradient(var(--pitch-black), 80%, var(--darker-green));
     border: 3px solid var(--light-green);

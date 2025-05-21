@@ -1,5 +1,6 @@
 @import url(global.css);
 
+/* === Layout Containers === */
 .intro {
     display: flex;
     align-items: center;
@@ -8,6 +9,7 @@
     margin: 0 auto;
 }
 
+/* === Intro Text === */
 .intro_text {
     border: 3px solid var(--dark-green);
     border-radius: 0 5px 5px 5px;
@@ -20,6 +22,7 @@
     gap: 32px;
 }
 
+/* === Intro Links === */
 .intro_links {
     display: flex;
     flex-direction: column;
@@ -35,7 +38,7 @@
 }
 
 .intro_links a {
-    background-image:linear-gradient(var(--white), 80%, var(--light-green));
+    background-image: linear-gradient(var(--white), 80%, var(--light-green));
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -56,15 +59,13 @@
 }
 
 .intro_links a:hover {
-    background-image:linear-gradient(var(--white), 20%, var(--light-green));
+    background-image: linear-gradient(var(--white), 20%, var(--light-green));
     text-decoration-color: var(--dark-green);
     text-underline-offset: 8px;
 }
 
-.intro_image {
-    width: 475px;
-}
 
+/* === Dark Mode === */
 .dark-mode .intro_text {
     box-shadow: 5px 5px 8px inset var(--darker-green);
 }

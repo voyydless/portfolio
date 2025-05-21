@@ -1,5 +1,6 @@
 @import url(global.css);
 
+/* === Navigation Bar === */
 nav {
     display: flex;
     align-items: center;
@@ -36,6 +37,7 @@ nav a:hover {
     text-underline-offset: 8px;
 }
 
+/* === Dark Mode === */
 .dark-mode nav a {
     background-image: linear-gradient(var(--pitch-black), 25%, var(--dark-green));
     border: 3px solid var(--dark-green);

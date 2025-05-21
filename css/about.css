@@ -1,5 +1,7 @@
+
 @import url(global.css);
 
+/* === Layout Containers === */
 nav {
     width: 1200px;
 }
@@ -12,7 +14,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 64px;
     margin: 0 auto 40px auto;
     width: 1200px;
     height: 875px;
@@ -31,6 +32,90 @@ nav {
     width: 475px;
 }
 
+/* === Tech Stack Dropdown === */
+.about_tech_dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-family: var(--title-font);
+    font-size: 16px;
+    color: var(--black);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    transition: transform 0.3s;
+    color: var(--dark-green);
+}
+
+.about.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* === Dropdown Content === */
+.dropdown_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    width: 475px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.about.open .dropdown_content {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropdown_content img {
+    height: 25px;
+}
+
+.dropdown_content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-image: linear-gradient(var(--white), 80%, var(--light-green));
+    border: 3px solid var(--dark-green);
+    border-radius: 5px;
+    font-family: var(--title-font);
+    padding: 8px;
+    color: var(--dark-green);
+    width: calc(50% - 6px);
+    min-width: 150px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.dropdown_content button:hover {
+    padding: 10px;
+}
+
+/* === Education Section === */
 .about_education {
     gap: 32px;
 }
@@ -52,10 +137,25 @@ nav {
     margin-top: 0;
 }
 
+/* === Dark Mode === */
 .dark-mode .about {
     box-shadow: 5px 5px 8px inset var(--darker-green);
 }
 
-.dark-mode .date{
-    color: var(--light-green)
+.dark-mode .dropdown-toggle {
+    color: var(--white);
+}
+
+.dark-mode .arrow {
+    color: var(--light-green);
+}
+
+.dark-mode .dropdown_content button {
+    background-image: linear-gradient(var(--pitch-black), 80%, var(--darker-green));
+    border: 3px solid var(--light-green);
+    color: var(--light-green);
+}
+
+.dark-mode .date {
+    color: var(--light-green);
 }

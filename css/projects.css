@@ -1,6 +1,6 @@
 @import url(global.css);
 
-/* ==== Layout Containers === */
+/* === Layout Containers === */
 nav {
     width: 1248px;
 }
@@ -92,7 +92,7 @@ hr {
 
 /* === Tech Stack Dropdown === */
 .project_tech_dropdown {
-    position: absolute;   /* Change from relative to absolute */
+    position: absolute;
     bottom: 0;
     display: flex;
     flex-direction: column;
