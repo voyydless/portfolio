@@ -1,0 +1,211 @@
+@import url(global.css);
+
+/* ==== Layout Containers === */
+nav {
+    width: 1248px;
+}
+
+.projects {
+    box-sizing: border-box;
+    border: 3px solid var(--dark-green);
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 5px 5px 3px #b2b0ad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px auto;
+    padding: 40px;
+    width: 1248px;
+    height: 875px;
+    overflow: auto;
+}
+
+hr {
+    border-top: 3px solid var(--dark-green);
+}
+
+.project a {
+    color: var(--dark-green);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: text-decoration 0.3s;
+}
+
+.project a:hover {
+    text-decoration-color: var(--dark-green);
+}
+
+/* === Project Card === */
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.project_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    gap: 16px;
+}
+
+/* === Project Image === */
+.project_image {
+    width: 45%;
+}
+
+.project_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid var(--dark-green);
+    box-shadow: 3px 2px 3px #b2b0ad;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project_image img:hover {
+    border: 5px solid var(--dark-green);
+}
+
+/* === Project Description === */
+.project_description {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.project_description h2 {
+    align-self: flex-start;
+}
+
+.project_description p {
+    font-size: 20px;
+}
+
+/* === Tech Stack Dropdown === */
+.project_tech_dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-family: var(--title-font);
+    font-size: 16px;
+    color: var(--black);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    transition: transform 0.3s;
+    color: var(--dark-green);
+}
+
+.project.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* === Dropdown Content === */
+.dropdown_content {
+    display: flex; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-direction: column;
+    align-self: center;
+    margin-left: 45%;
+    margin-top: -32px;
+    gap: 8px;
+    width: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project.open .dropdown_content {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown_content img {
+    height: 25px;
+}
+
+.dropdown_content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-image: linear-gradient(var(--white), 80%, var(--light-green));
+    border: 3px solid var(--dark-green);
+    border-radius: 5px;
+    font-family: var(--title-font);
+    padding: 8px;
+    color: var(--dark-green);
+    width: 150px;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.dropdown_content button:hover {
+    padding: 10px;
+    width: 155px;
+}
+
+/* === Final Sentence === */
+.project_this_site {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+/* === Dark Mode === */
+.dark-mode .projects {
+    box-shadow: 5px 5px 8px inset var(--darker-green);
+}
+
+.dark-mode hr {
+    border: none;  
+    border-top: 3px solid var(--dark-green);
+}
+
+.dark-mode .project a {
+    color: var(--light-green);
+}
+
+.dark-mode .project a:hover {
+    text-decoration-color: var(--light-green);
+}
+
+.dark-mode .project_image img {
+    border: 3px solid var(--light-green);
+    box-shadow: none;
+}
+
+.dark-mode .dropdown-toggle {
+    color: var(--white);
+}
+
+.dark-mode .arrow {
+    color: var(--light-green);
+}
+
+.dark-mode .dropdown_content button {
+    background-image: linear-gradient(var(--pitch-black), 80%, var(--darker-green));
+    border: 3px solid var(--light-green);
+    color: var(--light-green);
+}

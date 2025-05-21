@@ -31,6 +31,11 @@ nav a:hover {
     text-underline-offset: 8px;
 }
 
+.selected {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
 .dark-mode nav a {
     background-image: linear-gradient(var(--pitch-black), 25%, var(--dark-green));
     border: 3px solid var(--dark-green);

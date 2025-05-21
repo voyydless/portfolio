@@ -20,6 +20,13 @@ function loadTheme() {
 
 document.addEventListener("DOMContentLoaded", loadTheme);
 
+// Toggle dropdown for tech stack
+document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.closest('.project').classList.toggle('open');
+  });
+});
+
 // Language translations
 let language = {
     ptbr: {
@@ -36,7 +43,14 @@ let language = {
         education_course_date: "Agosto 2024 - Presente",
         education_alura: "AOVS Sistemas de informática LTDA (Caelum / Alura)",
         education_alura_description: "Um programa de treinamento prático em Engenharia de Software, Bancos de Dados e DevOps. Concluí mais de 16 cursos abordando tecnologias Front-end, lógica de programação, JavaScript, Python, Java e Git.",
-        education_alura_date: "Setembro 2024 - Presente"
+        education_alura_date: "Setembro 2024 - Presente",
+        project_title_guido: "Guido Café & Co.",
+        project_description_guido01: "Um site feito em React inspirado no Guido Café & Co., uma cafeteria localizada em Canoas - RS, Brasil, nomeada em homenagem ao cachorro do dono.",
+        project_description_guido02: "Possui uma página inicial responsiva, uma seção 'sobre' com a história de origem da cafeteria e informações sobre o café utilizado, um cardápio interativo com abas, informações de localização com incorporação do Google Maps e links para as redes sociais.",
+        project_title_am: "Portfólio AM Studio",
+        project_description_am: 'Um site de portfólio para um ilustrador fictício chamado Alex Mosely, criado com base no arquivo Figma fornecido durante o curso <a href="https://www.superhi.com/catalog/plan-design-and-code-your-first-website" target="_blank">Planeje, Desenhe + Codifique Seu Primeiro Site</a> da SuperHi.',
+        project_this_site_title: "E claro, <strong>este site!</strong>",
+        project_this_site_description: 'Você pode conferir o código de tudo isso e mais no meu <a href="https://github.com/voyydless" target="_blank">Github</a> !'
     },
     eng: {
         projects: "Projects",
@@ -52,7 +66,14 @@ let language = {
         education_course_date: "August 2024 - Present",
         education_alura: "AOVS Sistemas de informática LTDA (Caelum / Alura)",
         education_alura_description: "A hands-on training program in Software Engineering, Databases and DevOps. I've completed over 16 courses covering Front-end technologies, programming logic, JavaScript, Python, Java and Git.",
-        education_alura_date: "September 2024 - Present"
+        education_alura_date: "September 2024 - Present",
+        project_title_guido: "Guido Café & Co.",
+        project_description_guido01: "A React-based website inspired by Guido Café & Co., a coffee shop located in Canoas - RS, Brazil, named after the owner's dog.",
+        project_description_guido02: "Features a responsive home page, an about section with the café's origin story & information about the coffee they use, an interactive menu with tabs, location information with embedded Google Maps and links to their social media.",
+        project_title_am: "AM Studio Portfolio",
+        project_description_am: 'A portfolio website for a fictional illustrator named Alex Mosely, created based on the Figma file provided during the <a href="https://www.superhi.com/catalog/plan-design-and-code-your-first-website" target="_blank">Plan, Design + Code Your First Website</a> course from SuperHi.',
+        project_this_site_title: "And of course, <strong>this very site!</strong>",
+        project_this_site_description: 'You can check out the code for everything here and more on my <a href="https://github.com/voyydless" target="_blank">Github</a> !'
     }
 };
 
@@ -72,7 +93,14 @@ function setLanguage() {
         education_course_date: document.querySelector("#education_course_date"),
         education_alura: document.querySelector("#education_alura"),
         education_alura_description: document.querySelector("#education_alura_description"),
-        education_alura_date: document.querySelector("#education_alura_date")
+        education_alura_date: document.querySelector("#education_alura_date"),
+        project_title_guido: document.querySelector("#project_title_guido"),
+        project_description_guido01: document.querySelector("#project_description_guido01"),
+        project_description_guido02: document.querySelector("#project_description_guido02"),
+        project_title_am: document.querySelector("#project_title_am"),
+        project_description_am: document.querySelector("#project_description_am"),
+        project_this_site_title: document.querySelector("#project_this_site_title"),
+        project_this_site_description: document.querySelector("#project_this_site_description")
     };
 
     const currentLanguage = window.location.hash === "#eng" ? "eng" : "ptbr";

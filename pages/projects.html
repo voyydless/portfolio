@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <script src="../js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html" id="projects" class="selected"></a>
+            <a href="about.html" id="aboutme"></a>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="projects">
+
+            <div class="project">
+
+                <div class="project_main">
+
+                    <div class="project_image">
+                        <img src="../assets/preview-guido.png">
+                    </div>
+
+                    <div class="project_description">
+                        <h2 id="project_title_guido"></h2>
+                        <p id="project_description_guido01"></p>
+                        <p id="project_description_guido02"></p>
+
+                        <div class="project_tech_dropdown">
+                            <button class="dropdown-toggle">
+                                Tech Stack <span class="arrow">&#9660;</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dropdown_content">
+                    <button>
+                        <img src="../assets/icons8-react-40.png">
+                        React 18
+                    </button>
+                    <button>
+                        <img src="../assets/icons8-typescript-48.png">
+                        TypeScript
+                    </button>
+                    <button>
+                        <img src="../assets/icons8-css3-48.png">
+                        CSS3
+                    </button>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="project">
+
+                <div class="project_main">
+
+                    <div class="project_image">
+                        <img src="../assets/preview-am.png">
+                    </div>
+
+                    <div class="project_description">
+                        <h2 id="project_title_am"></h2>
+                        <p id="project_description_am"></p>
+
+                        <div class="project_tech_dropdown">
+                            <button class="dropdown-toggle">
+                                Tech Stack <span class="arrow">&#9660;</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dropdown_content">
+                    <button>
+                        <img src="../assets/icons8-react-40.png">
+                        React 18
+                    </button>
+                    <button>
+                        <img src="../assets/icons8-typescript-48.png">
+                        TypeScript
+                    </button>
+                    <button>
+                        <img src="../assets/icons8-css3-48.png">
+                        CSS3
+                    </button>
+                </div>
+
+                <hr>
+
+                <div class="project_this_site">
+                    <h2 id="project_this_site_title"></h2>
+                    <p id="project_this_site_description"></p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-wrapper">
+            <button id="theme-switch" onclick="toggleTheme()">Button</button>
+            <p>Developed by voyydless</p>
+
+            <div class="language-toggles">
+                <a id="language-toggle-eng" href="#eng" data-reload>ENG</a>
+                <a href="#ptbr" data-reload>PT-BR</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
