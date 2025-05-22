@@ -129,3 +129,17 @@ function loadLanguage() {
 // Define language reload onClick illiteration
 window.addEventListener('hashchange', setLanguage);
 document.addEventListener('DOMContentLoaded', loadLanguage);
+
+// Change image shown in about section based on toggle via mouse click
+const img = document.getElementById("about_image_normal");
+
+let toggle = false;
+img.addEventListener("mousedown", function(){
+    toggle = true;
+    img.src = "../assets/imagem_rato_hover.png";
+})
+
+img.addEventListener("mouseup", function(){
+    toggle = false;
+    img.src = "../assets/imagem_rato.png";
+})

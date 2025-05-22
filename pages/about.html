@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mim</title>
     <link rel="stylesheet" href="../css/about.css">
-    <script src="../js/theme.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
+
+    <img src="../assets/star1.png" class="star_top">
+    <button id="theme-switch" onclick="toggleTheme()">Button</button>
+    
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -42,7 +46,7 @@
 
             <div class="about_extra">
             <div class="about_image">
-                <img src="../assets/imagem_rato.png" alt="Eu, o rato">
+                <img src="../assets/imagem_rato.png" id="about_image_normal">
             </div>
 
             <div class="about_tech_dropdown">
@@ -99,10 +103,11 @@
         </section>
     </main>
 
+    <img src="../assets/star2.png" class="star_bottom">
+
     <footer>
 
         <div class="footer-wrapper">
-            <button id="theme-switch" onclick="toggleTheme()">Button</button>
             <p>Developed by voyydless</p>
 
             <div class="language-toggles">

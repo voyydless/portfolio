@@ -42,7 +42,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 64px;
+    margin: 32px 0;
 }
 
 .project_main {
