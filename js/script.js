@@ -1,12 +1,19 @@
 // Toggle dark/light mode and store it
+const imgToggle = document.getElementById("image_toggle");
+let toggleLight = true;
+
 function toggleTheme() {
     let element = document.body;
     element.classList.toggle("dark-mode");
     
     if (element.classList.contains("dark-mode")) {
         localStorage.setItem("theme","dark");
+        toggleLight = false;
+        imgToggle.src = "../assets/icons8-moon-30.png"
     } else {
         localStorage.setItem("theme","light")
+        toggleLight = true;
+        imgToggle.src = "../assets/icons8-sun-30.png";
     }
 }
 
@@ -14,6 +21,7 @@ function toggleTheme() {
 function loadTheme() {
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode")
+        imgToggle.src = "../assets/icons8-moon-30.png"
     }
 }
 
@@ -132,8 +140,8 @@ document.addEventListener('DOMContentLoaded', loadLanguage);
 
 // Change image shown in about section based on toggle via mouse click
 const img = document.getElementById("about_image_normal");
-
 let toggle = false;
+
 img.addEventListener("mousedown", function(){
     toggle = true;
     img.src = "../assets/imagem_rato_hover.png";

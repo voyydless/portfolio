@@ -23,10 +23,23 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
     background-color: var(--white);
     color: var(--black);
     margin: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#theme-switch {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 2%;
+    left: 2%;
+}
+
+#theme-switch:active {
+    animation: spin 1s infinite linear;
 }
 
 /* === Star Animations === */
@@ -104,7 +117,7 @@ p {
 }
 
 /* === Dark Mode === */
-.dark-mode {
+.dark-mode { 
     background-color: #0e0e0e;
     color: var(--white);
 }
