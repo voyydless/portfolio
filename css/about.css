@@ -32,6 +32,10 @@ nav {
     width: 475px;
 }
 
+.about_image:hover {
+    cursor: pointer;
+}
+
 /* === Tech Stack Dropdown === */
 .about_tech_dropdown {
     display: flex;
