@@ -5,42 +5,42 @@ nav {
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 615px;
-    padding: 4% 20px 0 0;
+    width: 500px;
+    padding: 4% 16px 0 0;
     margin: 0 auto;
 }
 
 nav a {
     background-image: linear-gradient(var(--white), 20%, var(--dark-green));
-    border: 3px solid var(--dark-green);
-    border-radius: 5px 16px 0 0;
-    box-shadow: 5px 0 3px #b2b0ad;
+    border: 2.5px solid var(--dark-green);
+    border-radius: 4px 13px 0 0;
+    box-shadow: 4px 0 2.5px #b2b0ad;
     border-bottom-style: none;
-    padding: 16px;
+    padding: 13px;
     color: var(--white);
     font-family: var(--title-font);
-    margin-right: 16px;
+    margin-right: 13px;
     text-decoration: underline;
     text-decoration-color: transparent;
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
     transition: 0.3s;
 }
 
 nav a:hover {
     background-image: linear-gradient(var(--white), 50%, var(--dark-green));
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
 }
 
 .selected {
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
 }
 
 /* === Dark Mode === */
 .dark-mode nav a {
     background-image: linear-gradient(var(--pitch-black), 25%, var(--dark-green));
-    border: 3px solid var(--dark-green);
+    border: 2.5px solid var(--dark-green);
     box-shadow: none;
     border-bottom-style: none;
     color: var(--pitch-black);

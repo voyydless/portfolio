@@ -14,27 +14,27 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 auto 24px auto;
+    margin: 0 auto 20px auto;
 }
 
 /* === Language Toggles === */
 .language-toggles a {
     background-image: linear-gradient(var(--white), 80%, var(--light-green));
-    border: 3px solid var(--dark-green);
+    border: 2.5px solid var(--dark-green);
     color: var(--dark-green);
-    border-radius: 5px;
+    border-radius: 4px;
     font-family: var(--paragraph-font);
     font-weight: 800;
     text-decoration: underline;
     text-decoration-color: transparent;
-    text-underline-offset: 4px;
-    padding: 8px;
-    margin: 0 8px;
+    text-underline-offset: 3px;
+    padding: 6px;
+    margin: 0 6px;
     transition: 0.3s;
 }
 
 #language-toggle-eng {
-    padding: 8px 15px;
+    padding: 6px 12px;
 }
 
 .language-toggles a:hover {
@@ -45,7 +45,7 @@ footer {
 /* === Dark Mode === */
 .dark-mode .language-toggles a {
     background-image: linear-gradient(var(--pitch-black), 80%, var(--darker-green));
-    border: 3px solid var(--light-green);
+    border: 2.5px solid var(--light-green);
     color: var(--light-green);
 }
 

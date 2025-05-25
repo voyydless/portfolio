@@ -61,18 +61,20 @@ html, body {
 
 .star_top {
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 5%;
     animation: upAndDownTop 3s infinite linear;
     animation-timing-function: ease-in-out;
+    width: 100px;
 }
 
 .star_bottom {
     position: absolute;
-    bottom: 20%;
+    bottom: 16%;
     right: 7%;
     animation: upAndDownBottom 3s infinite linear;
     animation-timing-function: ease-in-out;
+    width: 75px;
 }
 
 .star_top:hover {
@@ -111,24 +113,24 @@ strong {
 
 h1 {
     font-family: var(--title-font);
-    font-size: 36px;
+    font-size: 1.8rem;
 }
 
 h2 {
     font-family: var(--title-font);
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 h3 {
     font-family: var(--title-font);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 p {
     font-family: var(--paragraph-font);
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 
 /* === Dark Mode === */

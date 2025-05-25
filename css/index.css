@@ -5,21 +5,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px 40px 20px;
+    padding: 0 16px 32px 16px;
     margin: 0 auto;
 }
 
 /* === Intro Text === */
 .intro_text {
-    border: 3px solid var(--dark-green);
-    border-radius: 0 5px 5px 5px;
-    box-shadow: 5px 5px 3px #b2b0ad;
-    padding: 64px;
-    width: 615px;
-    height: 875px;
+    border: 2.5px solid var(--dark-green);
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 4px 4px 2.5px #b2b0ad;
+    padding: 50px;
+    width: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 25px;
 }
 
 /* === Intro Links === */
@@ -28,12 +28,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 25px;
 }
 
 .intro_links h2 {
     font-family: var(--title-font);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -41,38 +41,38 @@
     background-image: linear-gradient(var(--white), 80%, var(--light-green));
     display: flex;
     justify-content: center;
-    gap: 16px;
-    border: 3px solid var(--dark-green);
-    width: 280px;
+    gap: 13px;
+    border: 2.5px solid var(--dark-green);
+    width: 225px;
     text-align: center;
-    border-radius: 5px;
-    font-size: 24px;
-    padding: 21.5px 0;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 16px 0;
     text-decoration: none;
     font-family: Nunito Sans;
     font-weight: 700;
     color: var(--dark-green);
     text-decoration: underline;
     text-decoration-color: transparent;
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
     transition: 0.3s;
 }
 
 .intro_links a:hover {
     background-image: linear-gradient(var(--white), 20%, var(--light-green));
     text-decoration-color: var(--dark-green);
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
 }
 
 
 /* === Dark Mode === */
 .dark-mode .intro_text {
-    box-shadow: 5px 5px 8px inset var(--darker-green);
+    box-shadow: 4px 4px 6px inset var(--darker-green);
 }
 
 .dark-mode .intro_links a {
     background-image: linear-gradient(var(--pitch-black), 80%, var(--darker-green));
-    border: 3px solid var(--light-green);
+    border: 2.5px solid var(--light-green);
     color: var(--light-green);
 }
 
