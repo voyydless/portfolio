@@ -41,7 +41,7 @@ document.querySelectorAll('.dropdown-toggle').forEach(btn => {
 let language = {
     ptbr: {
         projects: "Projetos",
-        aboutme: "Sobre Mim",
+        aboutme: "Sobre",
         catchline: "Eleve seu negócio digital a outro nível <strong>com um Front-end de qualidade!</strong>",
         welcome: "Olá! Sou Void, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?",
         socials: "Acesse minhas redes:",

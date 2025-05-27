@@ -53,3 +53,23 @@ footer {
     background-image: linear-gradient(var(--pitch-black), 20%, var(--darker-green));
     text-decoration-color: var(--light-green);
 }
+
+/* === Media Queries === */
+@media (max-width: 480px) {
+    /* Footer Layout */
+    .footer-wrapper {
+        padding: 10px;
+        width: 100%;
+        margin: 8px auto 8px auto;
+    }
+
+    /* Typography */
+    .language-toggles a {
+        font-size: 0.75rem;
+    }
+
+    .footer-wrapper p {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+}

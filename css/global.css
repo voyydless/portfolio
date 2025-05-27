@@ -14,7 +14,7 @@
     --paragraph-font: Nunito Sans;
 }
 
-/* === Custom Scrollbat === */
+/* === Custom Scrollbar === */
 ::-webkit-scrollbar {
     width: 10px;
     background: var(--light-green);
@@ -41,6 +41,7 @@ html, body {
     overflow-x: hidden;
 }
 
+/* === Theme Toggle Visuals === */
 #theme-switch {
     position: absolute;
     background: transparent;
@@ -118,7 +119,7 @@ h1 {
 
 h2 {
     font-family: var(--title-font);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -130,7 +131,7 @@ h3 {
 
 p {
     font-family: var(--paragraph-font);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 /* === Dark Mode === */
@@ -145,4 +146,52 @@ p {
 
 .dark-mode ::-webkit-scrollbar {
     background: var(--darker-green);
+}
+
+/* === Media Queries === */
+@media (max-width: 480px) {
+    /* Scrollbar */    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Theme Toggle */
+    #theme-switch {
+        top: 1%;
+        left: 0.5%;
+    }
+
+    #theme-switch img {
+        width: 20px;
+    }
+
+    /* Stars */
+    .star_top,
+    .star_bottom {
+        display: none;
+    }
+
+    /* Typography */
+    h1 {
+        font-family: var(--title-font);
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-family: var(--title-font);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-family: var(--title-font);
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    p {
+        font-family: var(--paragraph-font);
+        font-size: 1rem;
+        line-height: 1.25;
+    }
 }

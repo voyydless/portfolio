@@ -49,3 +49,41 @@ nav a:hover {
 .dark-mode nav a:hover {
     background-image: linear-gradient(var(--pitch-black), 50%, var(--dark-green));
 }
+
+/* === Media Queries === */
+@media (max-width: 480px) {
+    /* Navigation Bar */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        padding: 4% 16px 0 0;
+        margin: 0 auto;
+    }
+
+    nav a {
+        background-image: none;
+        border: none;
+        box-shadow: none;
+        padding: 13px;
+        color: var(--dark-green);
+        font-size: 0.8rem;
+    }
+
+    nav a:hover {
+        background-image: none;
+    }
+
+    /* Dark Mode */
+    .dark-mode nav a {
+        background-image: none;
+        border: none;
+        box-shadow: none;
+        color: var(--light-green);
+    }
+
+    .dark-mode nav a:hover {
+        background-image: none;
+    }
+}

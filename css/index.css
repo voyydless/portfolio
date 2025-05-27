@@ -33,7 +33,7 @@
 
 .intro_links h2 {
     font-family: var(--title-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -46,10 +46,10 @@
     width: 225px;
     text-align: center;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 16px 0;
     text-decoration: none;
-    font-family: Nunito Sans;
+    font-family: var(--paragraph-font);
     font-weight: 700;
     color: var(--dark-green);
     text-decoration: underline;
@@ -79,4 +79,46 @@
 .dark-mode .intro_links a:hover {
     background-image: linear-gradient(var(--pitch-black), 20%, var(--darker-green));
     text-decoration-color: var(--light-green);
+}
+
+/* === Media Queries === */
+@media (max-width: 480px) {
+    /* Layout */
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro_text {
+        border: none;
+        box-shadow: none;
+        padding: 25px;
+        height: 100vh;
+        margin-bottom: 32px;
+    }
+
+    /* Links */
+    .intro_links {
+        gap: 16px;
+    }
+
+    .intro_links a {
+        gap: 13px;
+        width: 300px;
+        padding: 8px 0;
+    }
+
+    .intro_links img {
+        width: 25px;
+        height: 25px;;
+    }
+
+    /* Dark Mode */
+    .dark-mode .intro_text {
+        box-shadow: none;
+    }
+
 }
