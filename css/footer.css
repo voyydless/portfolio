@@ -5,7 +5,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 0 auto;
+    margin: 16px auto 0 auto;
     width: 100%;
 }
 
@@ -14,7 +14,11 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
+}
+
+.footer-wrapper p {
+    font-size: 1rem;
 }
 
 /* === Language Toggles === */
@@ -24,17 +28,18 @@ footer {
     color: var(--dark-green);
     border-radius: 4px;
     font-family: var(--paragraph-font);
+    font-size: 0.9rem;
     font-weight: 800;
     text-decoration: underline;
     text-decoration-color: transparent;
     text-underline-offset: 3px;
-    padding: 6px;
+    padding: 5px;
     margin: 0 6px;
     transition: 0.3s;
 }
 
 #language-toggle-eng {
-    padding: 6px 12px;
+    padding: 5px 11px;
 }
 
 .language-toggles a:hover {

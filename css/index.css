@@ -82,6 +82,13 @@
 }
 
 /* === Media Queries === */
+@media (max-width: 1050px) {
+    /* Layout */
+    .intro {
+    margin: 25% auto;
+    }
+}
+
 @media (max-width: 480px) {
     /* Layout */
     .intro {

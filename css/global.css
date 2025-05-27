@@ -149,12 +149,35 @@ p {
 }
 
 /* === Media Queries === */
-@media (max-width: 480px) {
+@media (max-width: 1300px) {
+    /* Stars */
+    .star_top {
+    left: 3%;
+    width: 75px;
+}
+
+.star_bottom {
+    right: 5%;
+    width: 50px;
+}
+}
+
+@media (max-width: 1200px) {
+    /* Stars */
+    .star_top,
+    .star_bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
     /* Scrollbar */    
     ::-webkit-scrollbar {
         display: none;
     }
+}
 
+@media (max-width: 480px) {
     /* Theme Toggle */
     #theme-switch {
         top: 1%;
@@ -163,12 +186,6 @@ p {
 
     #theme-switch img {
         width: 20px;
-    }
-
-    /* Stars */
-    .star_top,
-    .star_bottom {
-        display: none;
     }
 
     /* Typography */

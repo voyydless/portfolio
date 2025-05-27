@@ -165,8 +165,7 @@ nav {
 }
 
 /* === Media Queries === */
-@media (max-width: 480px) {
-
+@media (max-width: 1050px) {
     /* Layout */
     nav {
         width: 75%;
@@ -177,11 +176,23 @@ nav {
         box-shadow: none;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 89vh;
     }
 
     .about_text {
         width: 100%;
+    }
+
+    /* Dark Mode */
+    .dark-mode .about {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Layout */
+    .about {
+        height: 100vh;
     }
 
     .about_image,
@@ -197,11 +208,6 @@ nav {
     /* Education Section */
     .about_education .date {
         margin-top: 6px;
-    }
-
-    /* Dark Mode */
-    .dark-mode .about {
-        box-shadow: none;
     }
 }
 

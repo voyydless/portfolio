@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 /* === Media Queries === */
-@media (max-width: 480px) {
+@media (max-width: 1050px) {
     /* Navigation Bar */
     nav {
         display: flex;
