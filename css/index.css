@@ -102,19 +102,21 @@
     .intro_text {
         border: none;
         box-shadow: none;
+        text-align: center;
         padding: 25px;
-        height: 100vh;
+        height: 80vh;
         margin-bottom: 32px;
     }
 
     /* Links */
     .intro_links {
+        margin-top: 10%;
         gap: 16px;
     }
 
     .intro_links a {
         gap: 13px;
-        width: 300px;
+        width: 200px;
         padding: 8px 0;
     }
 
