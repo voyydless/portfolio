@@ -13,7 +13,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 24px auto;
     width: 960px;
     height: 700px;
     overflow: auto;
