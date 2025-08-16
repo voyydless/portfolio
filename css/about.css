@@ -107,6 +107,7 @@ nav {
     border: 2.5px solid var(--dark-green);
     border-radius: 4px;
     font-family: var(--title-font);
+    font-size: 0.75rem;
     padding: 6px;
     color: var(--dark-green);
     width: calc(50% - 5px);
