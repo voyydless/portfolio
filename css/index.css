@@ -16,7 +16,7 @@
     box-shadow: 4px 4px 2.5px #b2b0ad;
     padding: 50px;
     width: 500px;
-    height: 700px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -104,7 +104,7 @@
         box-shadow: none;
         text-align: center;
         padding: 25px;
-        height: 70vh;
+        min-height: 70vh;
         margin-bottom: 32px;
     }
 
