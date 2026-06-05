@@ -15,10 +15,13 @@
     border-radius: 0 4px 4px 4px;
     box-shadow: 4px 4px 2.5px #b2b0ad;
     padding: 50px;
-    width: 500px;
+    width: 960px;
     min-height: 700px;
     display: flex;
     flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -28,7 +31,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 12px;
 }
 
 .intro_links h2 {
@@ -37,7 +40,7 @@
     font-weight: 400;
 }
 
-.intro_links a {
+.intro .intro_links a {
     background-image: linear-gradient(var(--white), 80%, var(--light-green));
     display: flex;
     justify-content: center;
@@ -58,7 +61,7 @@
     transition: 0.3s;
 }
 
-.intro_links a:hover {
+.intro .intro_links a:hover {
     background-image: linear-gradient(var(--white), 20%, var(--light-green));
     text-decoration-color: var(--dark-green);
     text-underline-offset: 6px;

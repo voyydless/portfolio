@@ -17,9 +17,9 @@ nav a {
     box-shadow: 4px 0 2.5px #b2b0ad;
     border-bottom-style: none;
     padding: 13px;
-    color: var(--white);
+    color: var(--black);
     font-family: var(--title-font);
-    margin-right: 13px;
+    margin-left: 16px;
     text-decoration: underline;
     text-decoration-color: transparent;
     text-underline-offset: 6px;
@@ -33,7 +33,9 @@ nav a:hover {
 }
 
 .selected {
+    color: var(--white);
     text-decoration: underline;
+    text-decoration-color: var(--white);
     text-underline-offset: 6px;
 }
 
@@ -48,6 +50,10 @@ nav a:hover {
 
 .dark-mode nav a:hover {
     background-image: linear-gradient(var(--pitch-black), 50%, var(--dark-green));
+}
+
+.dark-mode .selected {
+    color: var(--white);
 }
 
 /* === Media Queries === */

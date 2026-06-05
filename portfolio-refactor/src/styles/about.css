@@ -11,20 +11,43 @@ nav {
     border-radius: 0 4px 4px 4px;
     box-shadow: 4px 4px 2.5px #b2b0ad;
     display: flex;
-    align-items: center;
+    align-items: flex-start; 
     justify-content: space-around;
     margin: 0 auto 24px auto;
     width: 960px;
-    min-height: 700px;
-    overflow: auto;
+    height: 700px; 
+    overflow-y: auto; 
+    padding-top: 32px; 
+    padding-bottom: 32px;
 }
 
 .about_text {
-    padding: 25px;
+    padding: 0 25px 25px 25px;
     width: 490px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+.about_text h1,
+.about_text h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--dark-green);
+    text-underline-offset: 4px;
+}
+
+.about_extra {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content; 
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about.open .about_extra {
+    transform: translateY(-100px); 
 }
 
 .about_image,
@@ -66,13 +89,19 @@ nav {
 }
 
 /* === Dropdown Content === */
-.dropdown_content {
+.about .dropdown_content {
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
-    margin-top: 13px;
-    width: 380px;
+    margin-left: 0;  
+    margin-top: 15px;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
@@ -87,11 +116,10 @@ nav {
 }
 
 .dropdown_group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
     width: 100%;
+    grid-template-columns: 140px 140px; 
+    justify-content: center;
 }
 
 .dropdown_content img {
@@ -110,21 +138,24 @@ nav {
     font-size: 0.75rem;
     padding: 6px;
     color: var(--dark-green);
-    width: calc(50% - 5px);
-    min-width: 120px;
+    width: 100%;    
+    min-width: auto; 
     margin: 0;
     transition: 0.3s;
+
 }
 
 .dropdown_content button:hover {
     padding: 8px;
 }
 
-/* === Education Section === */
+/* === Experience & Education Sections === */
+.about_experience,
 .about_education {
     gap: 25px;
 }
 
+.about_experience ul,
 .about_education ul {
     display: flex;
     flex-direction: column;
@@ -132,11 +163,23 @@ nav {
     margin-top: 25px;
 }
 
+.about_experience p,
 .about_education p {
     font-size: 1rem;
     margin-top: 6px;
 }
 
+.about_experience ul ul {
+    gap: 8px;
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.about_experience ul ul p {
+    margin-top: 0;
+}
+
+.about_experience .date,
 .about_education .date {
     color: var(--dark-green);
     margin-top: 0;
@@ -145,6 +188,11 @@ nav {
 /* === Dark Mode === */
 .dark-mode .about {
     box-shadow: 4px 4px 6px inset var(--darker-green);
+}
+
+.dark-mode .about_text h1,
+.dark-mode .about_text h2 {
+    text-decoration-color: var(--light-green);
 }
 
 .dark-mode .dropdown-toggle {
@@ -206,7 +254,8 @@ nav {
         font-size: 0.8rem;
     }
 
-    /* Education Section */
+    /* Experience & Education Sections */
+    .about_experience .date,
     .about_education .date {
         margin-top: 6px;
     }
