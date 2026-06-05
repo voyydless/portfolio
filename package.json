@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "predeploy": "cd portfolio-refactor && npm install && npm run build",
+    "deploy": "gh-pages -d portfolio-refactor/dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
